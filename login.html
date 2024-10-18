@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="/Move/style/vidstyle.css">
+    <link rel="stylesheet" href="/Move/style/corr.css">
+    <link rel="stylesheet" href="/Move/style/contact.css">
+    <link rel="stylesheet" href="/Move/style/service.css">
+</head>
+<body>
+ 
+<div class="main">
+    <a href="studentlogin.php"></a>
+        <div class="navbar">
+           <div class="icon">
+              <h2 class="logo">IFTU CLINIC</h2>
+           </div>
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a href="#sec1">HOME</a> </li>
+              <li><a href="#sec2">SERVICE</a></li>
+              <li><a href="#sec3">ABOUT&nbsp;US</a> </li>
+              <li><a href="#sec4">CONTACT</a> </li>
+           </ul>
+        </div>
+        <div class="root">
+           <h1 >Welcome to Iftu Clinic</h1>
+           <br>
+           <p class="par">"Empower your wellness journey with our compassionate care. <br>  We believe in the healing power within you, offering personalized solutions for a healthier, happier life. <br> Your path to vitality starts here, where expertise meets empathy. <br> Discover a clinic that nurtures your well-being, one step at a time."
+           </p>
+           <div class="cont">
+              <form action="Login.php" method="post">
+                 <h2>Login Here</h2> <br>
+                 
+                 <?php if (!empty($errorMessage)) : ?>
+                      <div style="color: red;"><?php echo $errorMessage; ?></div>
+                      <?php endif; ?>
+              
+                
+                 <div class="ins">
+                    <input type="text" placeholder="Enter your Id" name="id">
+                    <input type="password" placeholder="Enter your password " name="password"> <br>
+                     <label for="role" name="role">Select type</label>  
+                    
+                    <select name="role" id="role">
+                       <option value="Doctor">Doctor</option>
+                       <option value="Admin">Admin</option>
+                       <option value="Pharmacist">Pharmacist</option>
+                       <option value="Reception">Reception</option>
+                       <option value="Labratory">Labratory</option>
+                     </select>
+                 </div>
+                 
+
+                 <button class="btn"  type="submit" name="submit">
+                 Login
+                 </button>
+                
+                 <p>Don't have an account</p>
+                 <p> <a href="signup.php">Sign up</a> &nbsp;  here</p>
+              </form>
+           </div>
+        </div>
+     </div>
+     </div> 
+
+   </div>
+    
+    <div class="section-2 box" id="sec2">
+    <div class="sec">
+         <div class="title">
+           <h1>Our Service</h1>
+         </div>
+    
+         <div class="service">
+       <div class="card">
+         <h2>Hospitality</h2>
+         <p>"Welcome to our Iftu clinic, where Hospitality is our priority. We believe in providing more than just medical care. We offer a warm, welcoming environment that contributes to your recovery. Our staff is dedicated to ensuring your comfort and well-being during your stay with us.</p>
+        
+       
+       </div>
+       <div class="card">
+         <h2>Chamber Services</h2>
+         <p>Our Services are top-notch, equipped with state-of-the-art facilities for various treatments. We maintain and operate our chambers with the utmost care, ensuring the highest standards of safety and effectiveness</p>
+        
+       
+       </div>
+    
+       <div class="card">
+         <h2>Emergency Care</h2>
+         <p>In times of need, our Emergency Care is there for you. Our Emergency Department operates 24/7, equipped to handle a broad spectrum of illnesses and injuries. We prioritize patients based on the severity of their condition to provide immediate attention to those who need it most.</p>
+       </div>
+       </div>
+       </div>
+    </div>
+
+    <div class="section-3 box" id="sec3">
+    
+    <h1>About Us</h1>
+    
+    <p>
+              Iftu Clinic, a place where healing and education converge.
+
+             Iftu Clinic is a vital healthcare facility nestled within the vibrant of Dire Dawa City, Ethiopia. As part of the esteemed Dire dawa city, this clinic serves as a beacon of care and compassion for the patients.
+
+              Our mission extends beyond medical treatment. We are committed to nurturing the next generation of healthcare professionals. Guided by experienced professor.
+
+              Nestled amidst the lush hills of Dire Dawa, the Iftu Clinic stands as a beacon of healing and wisdom. Our unwavering commitment is to the well-being of our community, who find solace within our walls day and night. As the clock’s hands move tirelessly, we extend beyond medical care, offering sage advice and guidance. In the quiet hours, our clinic pulses with purpose, mending spirits and nurturing resilience. At dawn, we stand ready—our white coats a canvas for compassion. The sun spills through windows, painting hope upon sterile walls. Our promise echoes: “You are not alone; we are here, always.”
+</p>
+     </div>
+    <div class="section-4 box"  id="sec4">
+    <div class="container">
+    <form action="contactus.php" method="post">
+        <h1>Contact Us Form</h1>
+        <input type="text" id="firstName" placeholder="First Name" required name="fname">
+        <input type="text" id="lastName" placeholder="Last Name" required name="lname">
+        <input type="email" id="email" placeholder="Email" required name="email">
+        <input type="number" id="mobile" placeholder="Mobile" required name="mobile">
+        <textarea required placeholder="Type Your Message Here." name="message"></textarea>
+        <input type="submit" value="Send" id="button">
+    </form>
+</div> 
+      </div>
+       
+</body>
+</html>
+
+
+
+
+
